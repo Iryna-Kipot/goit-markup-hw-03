@@ -28,6 +28,8 @@ body {
 }
 
 .top-logo {
+  margin-right: 77px;
+
   color: #2e2f42;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -51,6 +53,16 @@ body {
 
 .nav .item:not(:last-child) {
   margin-right: 40px;
+}
+
+.main-nav {
+  display: flex;
+  margin-right: auto;
+}
+
+.head {
+  display: flex;
+  align-items: flex-start;
 }
 
 .site-nav:hover,
@@ -150,7 +162,29 @@ body {
   margin-bottom: 8px;
 }
 
+.display {
+  display: flex;
+}
+
+.display .module {
+  width: 264px;
+}
+
+.display .module + .module {
+  margin-left: 24px;
+}
+
+.display .item + .item {
+  margin-left: 24px;
+}
+
+.display .our-team + .our-team {
+  margin-left: 24px;
+}
+
 .our-team {
+text-align: center;
+
   background-color: #ffffff;
 }
 
@@ -215,8 +249,34 @@ body {
 
 .capabilities {
   padding-top: 120px;
+  
 }
 
 .img {
   padding-bottom: 120px;
+  margin-top: 120px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 120px;
+}
+
+.flex-element {
+  flex-basis: calc((100%-48px)/3);
+  margin-right: 24px;
+}
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+
+.btn .item + .item {
+  margin-left: 24px;
 }
