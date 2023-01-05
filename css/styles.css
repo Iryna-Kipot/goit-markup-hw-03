@@ -286,11 +286,8 @@ border-radius: 0px 0px 4px 4px;
   
 }
 
-.card-img {
-  display: block;
-}
-
 .cards {
+  display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -306,9 +303,12 @@ border-radius: 0px 0px 4px 4px;
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: ((100%-48px)/3);
   row-gap: 48px;
   column-gap: 24px;
+}
+
+.flex-element {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .btn {
